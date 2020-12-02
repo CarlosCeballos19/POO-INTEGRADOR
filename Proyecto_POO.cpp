@@ -22,6 +22,7 @@ int main(){
       string contrasena{};
       cout << "Nombre (use guion bajo como espacio): "; cin >> nombre;
       u1.pedirNombre(nombre);
+      cout << u1.getNombre() << endl;
       cout << "Correo: "; cin >> correo;
       u1.pedirCorreo(correo);
       cout << "Telefono: "; cin >> telefono;
@@ -62,7 +63,7 @@ int main(){
       cout << " " << endl;
       cout << "--- REALICE SU TRANSACCION" << endl;
       cout << " " << endl;
-      cout << "Se le envio un NIP via SMS" << endl;
+      cout << "Se le envio un NIP vía SMS" << endl;
       cout << "Digite el NIP que le fue enviado: "; cin >> nip;
       t1.pedirNip(nip,alt);
       cout << "Movimientos que se pueden realizar: " << endl;
@@ -75,9 +76,12 @@ int main(){
       t1.pedirMonto(monto);
     
     Notificacion n1{};
+    int conf{};
       cout << " " << endl;
       cout << "--- NOTIFICACION DE MOVIMIENTO:" << endl;
       n1.crearNotificacion(u1,t1,tj1);
+      cout << "-Por favor, teclee 1 si ha sido usted e ignore el mensaje, en caso que no, teclee 0: " ; cin >> conf;
+      n1.confirmarTrans(conf);
       n1.enviarNotificacion(u1);
 
     Ticket tc1{};

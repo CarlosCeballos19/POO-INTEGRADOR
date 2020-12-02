@@ -36,13 +36,25 @@ class Notificacion{
 
     void crearNotificacion(Usuario u,Transaccion t, Tarjeta tj){
       string noti{};
-      noti = "Estimado(a) " + u.getNombre() + ":\n" + "Hemos detectado el siguiente movimiento: " + t.getMovRealizado() + ", por un monto de $" + to_string(t.getMonto()) + " realizado con su tarjeta de numero " + tj.getNumTarjeta();
+      noti = "- Estimado(a) " + u.getNombre() + ":\n" + "Hemos detectado el siguiente movimiento: " + t.getMovRealizado() + ", por un monto de $" + to_string(t.getMonto()) + " realizado con su tarjeta con número " + tj.getNumTarjeta();
       cout<< noti <<endl;
     }
     void enviarNotificacion(Usuario u){
       string notif{};
-      notif = "La notificacion ha sido enviada al siguiente correo: " + u.getCorreo();
+      notif = "\nLa notificacion ha sido enviada al siguiente correo: " + u.getCorreo();
       cout << notif << endl;
+    }
+    void confirmarTrans(int conf){
+    switch (conf){
+      case 1: cout << "\nGracias por confirmar";
+      break;
+      case 0: cout << "\nMovimiento cancelado, notifique a su proveedor de servicio" << endl;
+      exit(1);
+      break;
+      default: cout << "\nOpción inválida, movimiento cancelado" << endl;
+      exit(1);
+    }
+    //system("PAUSE");
     }
 };
 
