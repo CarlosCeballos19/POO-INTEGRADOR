@@ -47,8 +47,9 @@ class Ticket{
     }
 
     void enviarTicket(Usuario u){
-        cout << " " << endl;
-      cout << "-El ticket será enviado a" + u.getCorreo() << endl; 
+      cout << " " << endl;
+      cout << "El ticket será enviado a" + u.getCorreo() << endl; 
+      cout << "Gracias por su preferencia" << endl;
     }
 
 };//clase Ticket
