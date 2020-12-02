@@ -1,3 +1,6 @@
+//Alessandra Hernández Bolaños A01745363 \
+Carlos Josue Ceballos Arciniega A01752195
+
 #include "Usuario.h"
 #include "Tarjeta.h"
 #include "Transaccion.h"

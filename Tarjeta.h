@@ -1,3 +1,6 @@
+//Alessandra Hernández Bolaños A01745363 \
+Carlos Josue Ceballos Arciniega A01752195
+
 #ifndef TARJETA_T
 #define TARJETA_T
 
