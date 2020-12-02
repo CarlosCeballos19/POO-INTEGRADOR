@@ -89,7 +89,8 @@ int main(){
       cout << "RESUMEN DE TRANSACCION PREVIAMENTE AUTORIZADA" << endl;
       tc1.setNumTicket(1);
       cout << "Ticket No. " + to_string(tc1.getNumTicket()) << endl;
-      tc1.crearTicket(u1,t1,tj1); //tj
+      tc1.crearTicket(u1,t1,tj1);
+      tc1.enviarTicket(u1);
 
     return 0;
 }
