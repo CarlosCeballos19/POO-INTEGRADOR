@@ -22,7 +22,6 @@ int main(){
       string contrasena{};
       cout << "Nombre (use guion bajo como espacio): "; cin >> nombre;
       u1.pedirNombre(nombre);
-      cout << u1.getNombre() << endl;
       cout << "Correo: "; cin >> correo;
       u1.pedirCorreo(correo);
       cout << "Telefono: "; cin >> telefono;
